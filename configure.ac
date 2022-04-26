@@ -4,7 +4,7 @@
 #
 # ( Borrowed some config tricks from gtk+, gnet, xscreensaver, mutt )
 
-AC_INIT([exonerate], [2.4.0])
+AC_INIT([exonerate], [2.4.1])
 AC_CONFIG_SRCDIR([src/sequence/sequence.c])
 AM_INIT_AUTOMAKE
 AC_PROG_CC

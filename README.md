@@ -10,7 +10,7 @@ fixes to the final version (2.4.0).
 To check out/build the final (stable) version:
 
 ```
-$ git clone https://github.com/nathanweeks/exonerate.git
+$ git clone https://github.com/thiagogenez/exonerate.git
 $ cd exonerate
 $ git checkout v2.4.0
 $ ./configure [YOUR_CONFIGURE_OPTIONS]
@@ -25,7 +25,7 @@ Multi-threading has been disabled after v2.4.0.
 To build the master branch:
 
 ```
-$ git clone https://github.com/nathanweeks/exonerate.git
+$ git clone https://github.com/thiagogenez/exonerate.git
 $ cd exonerate
 $ autoreconf -i
 $ ./configure [YOUR_CONFIGURE_OPTIONS]
@@ -38,11 +38,11 @@ This repository contains a Dockerfile that formalizes the process to build and i
 To build a [Docker](https://www.docker.com/) image and execute exonerate (assuming input sequences are in the current working directory or a subdirectory of on the host):
 
 ```
-$ git clone https://github.com/nathanweeks/exonerate.git
+$ git clone https://github.com/thiagogenez/exonerate.git
 $ cd exonerate
-$ docker build -t exonerate .
-$ docker run -it --rm -v $PWD:/mnt -w /mnt exonerate --version
-exonerate from exonerate version 2.4.0
-Using glib version 2.64.3
-Built on Jan 23 2021
+$ docker build -t exonerate:latest .
+$ docker run -it --rm exonerate:latest exonerate --version
+exonerate from exonerate version 2.4.1
+Using glib version 2.56.4
+Built on Apr 26 2022
 ```
